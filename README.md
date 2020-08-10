@@ -1,6 +1,6 @@
 # Decoding task states by spotting salient patterns at time points and brain regions
 
-We proposed a novel architecture, Salient Patterns Over Time and Space (SPOTS), for decoding brain task states. 
+We proposed a novel architecture, Salient Patterns Over Time and Space (SPOTS), for decoding brain task states. SPOTS considers both spatial and temporal relationships via the combination of spatial embedding and an attention mechanism, resulting in improvements to model performance especially for smaller window sizes.
 
 In this git repository, we have added codes for two of the models that we tested:
 - Baseline LSTM model
