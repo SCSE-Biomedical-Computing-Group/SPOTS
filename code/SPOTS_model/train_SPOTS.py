@@ -152,11 +152,11 @@ def convert_to_one_hot(y_labels, num_labels):
 	return y_one_hot_labels
 
 ## Constants 
-CHUNK =  40
+CHUNK = 40
 EPOCH = 500
-BATCH_SIZE = 4
+BATCH_SIZE = 32
 LSTM_UNITS = 32
-CNN_FILTERS = 4
+CNN_FILTERS = 32
 LEARNING_RATE = 0.05
 SAVE_DIR = './'
 PATIENCE = 10
@@ -210,9 +210,7 @@ if __name__ == '__main__':
 
 			input_batch = np.expand_dims(x_train[bi:bi + BATCH_SIZE, :, :], axis = 3)
 
-			#s = np.zeros((BATCH_SIZE, 1, NUM_LABELS))
 			NOISE = np.random.normal(loc=NOISE_MEAN, scale=NOISE_STD, size = y_train_one_hot[bi:bi + BATCH_SIZE].shape)
-			#y_train_one_hot_batch_decoder =  y_train_one_hot[bi:bi + BATCH_SIZE] +  NOISE #np.concatenate((s,  y_train_one_hot[bi:bi + BATCH_SIZE, 0:-1]), axis = 1)
 			y_train_one_hot_batch_decoder = np.zeros(y_train_one_hot[bi:bi + BATCH_SIZE].shape) + NOISE
 			y_train_one_hot_batch_out = y_train_one_hot[bi:bi + BATCH_SIZE]
 			full_model.train_on_batch([input_batch, y_train_one_hot_batch_decoder], y_train_one_hot_batch_out)
@@ -268,7 +266,7 @@ if __name__ == '__main__':
 		
 		early_stopping_epoch = ep - num_epoch_no_improvement
 
-		with open(SAVE_DIR + '/results_' + str(TASK) + '_SPOT.csv', 'a') as out_stream:
+		with open(SAVE_DIR + '/results_' + str(TASK) + '_SPOTS.csv', 'a') as out_stream:
 			out_stream.write(str(CHUNK) + ',' + str(SEED) + ',' + str(ep) + ',' + str(all_trainable_count) + ',' + str(test_acc*100) + ',' + str(scores_train[1]*100) + '\n')
 
 	K.clear_session()

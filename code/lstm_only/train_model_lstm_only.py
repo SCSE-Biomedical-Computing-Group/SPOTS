@@ -120,7 +120,7 @@ def convert_to_one_hot(y_labels, num_labels):
 ## Constants 
 CHUNK = 40
 EPOCH = 200
-BATCH_SIZE = 4
+BATCH_SIZE = 32
 LSTM_UNITS = 512
 NUM_LSTM_LAYERS = 1
 LEARNING_RATE = 0.05

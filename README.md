@@ -20,10 +20,10 @@ In this git repository, we have added codes for two of the models that we tested
 python3 train_model_lstm_only.py
 ```
 
-* `codes/SPOT_model`: This folder contains the Python code for training the proposed RNN model built using Keras and Tensorflow. Attention was coded from [here](https://github.com/thushv89/attention_keras). You can run the code by running the following command:
+* `codes/SPOTS_model`: This folder contains the Python code for training the proposed RNN model built using Keras and Tensorflow. Attention was coded from [here](https://github.com/thushv89/attention_keras). You can run the code by running the following command:
 
 ```
-python3 train_SPOT.py
+python3 train_SPOTS.py
 ```
 
 ## Attention Maps
@@ -31,10 +31,10 @@ python3 train_SPOT.py
 Attention maps can be generated from the attention layer in SPOTS. This provides an interpretable visualisation to understand which time points are important in making a prediction. Below, we show how the attention maps change over epochs for window sizes 10, 20 and 30.
 
 ### Window Size: 10
-![chunk-size-10](https://github.com/anonMiccai/SPOT/blob/master/window_size_10.gif)
+![chunk-size-10](https://github.com/SCSE-Biomedical-Computing-Group/SPOTS/blob/master/window_size_10.gif)
 
 ### Window Size: 20
-![chunk-size-20](https://github.com/anonMiccai/SPOT/blob/master/window_size_20.gif)
+![chunk-size-20](https://github.com/SCSE-Biomedical-Computing-Group/SPOTS/blob/master/window_size_20.gif)
 
 ### Window Size: 30
-![chunk-size-30](https://github.com/anonMiccai/SPOT/blob/master/window_size_30.gif)
+![chunk-size-30](https://github.com/SCSE-Biomedical-Computing-Group/SPOTS/blob/master/window_size_30.gif)
