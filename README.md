@@ -3,7 +3,8 @@
 [[Manuscript]](https://yihao001.github.io/publications/paper12_manuscript.pdf)
 [[Poster]](https://yihao001.github.io/publications/paper12_poster.pdf)
 [[Video]](https://yihao001.github.io/publications/paper12_video.mp4)
-[This work has been accepted in [MLCN 2020](https://mlcnws.com/2020/08/18/mlcn-2020-accepted-papers/), held in conjunction with MICCAI 2020]
+
+(This work has been accepted in [MLCN 2020](https://mlcnws.com/2020/08/18/mlcn-2020-accepted-papers/), held in conjunction with MICCAI 2020)
 
 We proposed a novel architecture, Salient Patterns Over Time and Space (SPOTS), for decoding brain task states. SPOTS considers both spatial and temporal relationships via the combination of spatial embedding and an attention mechanism, resulting in improvements to model performance especially for smaller window sizes (which the present state of the art struggles with).
 
