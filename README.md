@@ -34,7 +34,7 @@ python3 train_SPOTS.py
 
 ## Attention Maps
 
-Attention maps can be generated from the attention layer in SPOTS. This provides an interpretable visualisation to understand which time points are important in making a prediction. Below, we show how the attention maps change over epochs for window sizes 10, 20 and 30.
+Attention maps can be generated from the attention layer in SPOTS. This provides an interpretable visualisation to understand which time points are important in making a prediction. Below, we show how the attention maps change over epochs for window sizes 10, 20 and 30. More figures can be found in the [manuscript](https://yihao001.github.io/publications/paper12_manuscript.pdf) and [poster](https://yihao001.github.io/publications/paper12_poster.pdf).
 
 ### Window Size: 10
 ![chunk-size-10](https://github.com/SCSE-Biomedical-Computing-Group/SPOTS/blob/master/window_size_10.gif)
